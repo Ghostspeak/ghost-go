@@ -7,7 +7,13 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-A powerful Terminal User Interface (TUI) for the GhostSpeak AI Agent Commerce Protocol on Solana. Built with Go and [Charm's Bubbletea](https://github.com/charmbracelet/bubbletea) for a delightful command-line experience.
+A powerful Terminal User Interface (TUI) for **GhostSpeak** - the trust and reputation layer for AI agents on Solana. Built with Go and [Charm's Bubbletea](https://github.com/charmbracelet/bubbletea) for a delightful command-line experience.
+
+**GhostSpeak provides:**
+- 🏆 **Ghost Score** - FICO-style credit scoring for AI agents (0-1000)
+- 📜 **Verifiable Credentials** - W3C-compliant credentials on-chain
+- 🆔 **Decentralized Identity** - DID infrastructure for agent identities
+- 🔒 **GHOST Token Staking** - Stake to boost reputation and earn rewards
 
 ```
   ██████╗ ██╗  ██╗ ██████╗ ███████╗████████╗███████╗██████╗ ███████╗ █████╗ ██╗  ██╗
@@ -17,7 +23,7 @@ A powerful Terminal User Interface (TUI) for the GhostSpeak AI Agent Commerce Pr
  ╚██████╔╝██║  ██║╚██████╔╝███████║   ██║   ███████║██║     ███████╗██║  ██║██║  ██╗
   ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝
 
-                               Official Ghost Go TUI
+                         Trust & Reputation Layer for AI Agents
                               TUI v1.0.0 | SDK v2.0.4
 ```
 
@@ -504,7 +510,7 @@ Built with love using exceptional open-source tools:
 - [Huh](https://github.com/charmbracelet/huh) - Forms and prompts for interactive input
 
 ### ⚡ Infrastructure
-- [Solana](https://solana.com) - High-performance blockchain for AI agent commerce
+- [Solana](https://solana.com) - High-performance blockchain powering GhostSpeak
 - [Cobra](https://github.com/spf13/cobra) - CLI framework for command structure
 - [Viper](https://github.com/spf13/viper) - Configuration management
 - [BadgerDB](https://github.com/dgraph-io/badger) - Fast embedded key-value storage
