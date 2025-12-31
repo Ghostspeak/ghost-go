@@ -93,12 +93,12 @@ This report verifies that the GhostSpeak Go CLI is fully prepared to be extracte
 
 ### Command Verification
 ```bash
-✅ ./ghost version          # v1.0.0
+✅ ./boo version          # v1.0.0
 ✅ ./ghost --help           # 14 commands displayed
-✅ ./ghost agent --help     # 7 subcommands
-✅ ./ghost staking --help   # 5 subcommands  
-✅ ./ghost governance --help # 5 subcommands
-✅ ./ghost escrow --help    # 7 subcommands
+✅ ./boo agent --help     # 7 subcommands
+✅ ./boo staking --help   # 5 subcommands  
+✅ ./boo governance --help # 5 subcommands
+✅ ./boo escrow --help    # 7 subcommands
 ```
 
 ### Network Integration

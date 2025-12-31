@@ -26,10 +26,10 @@ Before creating bug reports, please check existing issues. When creating a bug r
 **Title:** Wallet creation fails on Windows
 
 **Description:**
-When running `ghost wallet create`, the CLI crashes with an error.
+When running `boo wallet create`, the CLI crashes with an error.
 
 **Steps to Reproduce:**
-1. Run `ghost wallet create my-wallet`
+1. Run `boo wallet create my-wallet`
 2. Enter password when prompted
 3. CLI crashes
 

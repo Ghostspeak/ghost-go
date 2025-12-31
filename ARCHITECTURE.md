@@ -388,7 +388,7 @@ User Output ← Formatted Display ← Service Response ← Domain Logic
 
 ### Example: Agent Registration
 
-1. **User runs**: `ghost agent register --name "MyAgent"`
+1. **User runs**: `boo agent register --name "MyAgent"`
 2. **Cobra** parses flags and calls `runAgentRegister()`
 3. **Command** accesses `application.AgentService`
 4. **Service** validates params via domain

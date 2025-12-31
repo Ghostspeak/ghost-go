@@ -4,6 +4,7 @@
 *.dll
 *.so
 *.dylib
+boo
 ghost
 ghostspeak-go
 

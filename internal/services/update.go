@@ -158,18 +158,18 @@ func (s *UpdateService) GetDownloadURL() (string, error) {
 	switch platform {
 	case "darwin":
 		if arch == "arm64" {
-			assetName = "ghost-darwin-arm64"
+			assetName = "boo-darwin-arm64"
 		} else {
-			assetName = "ghost-darwin-amd64"
+			assetName = "boo-darwin-amd64"
 		}
 	case "linux":
 		if arch == "arm64" {
-			assetName = "ghost-linux-arm64"
+			assetName = "boo-linux-arm64"
 		} else {
-			assetName = "ghost-linux-amd64"
+			assetName = "boo-linux-amd64"
 		}
 	case "windows":
-		assetName = "ghost-windows-amd64.exe"
+		assetName = "boo-windows-amd64.exe"
 	default:
 		return "", fmt.Errorf("unsupported platform: %s/%s", platform, arch)
 	}

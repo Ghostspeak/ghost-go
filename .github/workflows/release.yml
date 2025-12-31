@@ -31,15 +31,15 @@ jobs:
     - name: Build binaries
       run: |
         # Linux
-        GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o dist/ghost-linux-amd64
-        GOOS=linux GOARCH=arm64 go build -ldflags="-s -w" -o dist/ghost-linux-arm64
+        GOOS=linux GOARCH=amd64 go build -ldflags="-s -w" -o dist/boo-linux-amd64
+        GOOS=linux GOARCH=arm64 go build -ldflags="-s -w" -o dist/boo-linux-arm64
 
         # macOS
-        GOOS=darwin GOARCH=amd64 go build -ldflags="-s -w" -o dist/ghost-darwin-amd64
-        GOOS=darwin GOARCH=arm64 go build -ldflags="-s -w" -o dist/ghost-darwin-arm64
+        GOOS=darwin GOARCH=amd64 go build -ldflags="-s -w" -o dist/boo-darwin-amd64
+        GOOS=darwin GOARCH=arm64 go build -ldflags="-s -w" -o dist/boo-darwin-arm64
 
         # Windows
-        GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o dist/ghost-windows-amd64.exe
+        GOOS=windows GOARCH=amd64 go build -ldflags="-s -w" -o dist/boo-windows-amd64.exe
 
     - name: Create checksums
       run: |
@@ -58,30 +58,30 @@ jobs:
         prerelease: false
         generate_release_notes: true
         files: |
-          dist/ghost-*
+          dist/boo-*
           dist/checksums.txt
         body: |
           ## Installation
 
           ### Linux (amd64)
           ```bash
-          curl -sL https://github.com/ghostspeak/ghost-go/releases/download/${{ steps.version.outputs.VERSION }}/ghost-linux-amd64 -o ghost
-          chmod +x ghost
-          sudo mv ghost /usr/local/bin/
+          curl -sL https://github.com/ghostspeak/ghost-go/releases/download/${{ steps.version.outputs.VERSION }}/boo-linux-amd64 -o boo
+          chmod +x boo
+          sudo mv boo /usr/local/bin/
           ```
 
           ### macOS (Apple Silicon)
           ```bash
-          curl -sL https://github.com/ghostspeak/ghost-go/releases/download/${{ steps.version.outputs.VERSION }}/ghost-darwin-arm64 -o ghost
-          chmod +x ghost
-          sudo mv ghost /usr/local/bin/
+          curl -sL https://github.com/ghostspeak/ghost-go/releases/download/${{ steps.version.outputs.VERSION }}/boo-darwin-arm64 -o boo
+          chmod +x boo
+          sudo mv boo /usr/local/bin/
           ```
 
           ### Windows
-          Download `ghost-windows-amd64.exe` and add to your PATH.
+          Download `boo-windows-amd64.exe` and add to your PATH.
 
           ## Verify Checksums
           ```bash
-          sha256sum ghost-*
+          sha256sum boo-*
           cat checksums.txt
           ```

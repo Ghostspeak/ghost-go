@@ -28,8 +28,8 @@ var (
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "ghost",
-	Short: "GhostSpeak AI Agent Commerce Protocol CLI",
+	Use:   "boo",
+	Short: "GhostSpeak Trust & Reputation Layer TUI (Boo! 👻)",
 	Long:  renderBanner(),
 	PersistentPreRunE: func(cmd *cobra.Command, args []string) error {
 		// Skip app initialization for certain commands

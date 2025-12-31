@@ -24,7 +24,7 @@ Describe specific use cases where this feature would be beneficial:
 ## Example Usage
 ```bash
 # Show how the feature would be used
-ghost new-command --flag value
+boo new-command --flag value
 ```
 
 ## Additional Context

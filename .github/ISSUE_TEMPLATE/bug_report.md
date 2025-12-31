@@ -23,7 +23,7 @@ What actually happened.
 ## Environment
 - **OS**: [e.g., macOS 14.0, Ubuntu 22.04, Windows 11]
 - **Go Version**: [output of `go version`]
-- **CLI Version**: [output of `ghost version`]
+- **CLI Version**: [output of `boo version`]
 - **Network**: [devnet/testnet/mainnet]
 
 ## Logs

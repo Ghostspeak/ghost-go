@@ -8,15 +8,15 @@ The theme is based on the official GhostSpeak logo:
 
 ![GhostSpeak Logo Colors]
 - **Primary**: Neon Yellow/Lime (#CFFF04) - The iconic background
-- **Secondary**: Black (#000000) - The ghost silhouette and primary elements
+- **Secondary**: Black (#000000) - The boo silhouette and primary elements
 - **Accent**: Yellow variation (#D4FF00) - For highlights and variety
 
 ## Design Philosophy
 
-The GhostSpeak ghost has a **zippered mouth** - this represents privacy and encrypted communication. The CLI embodies this with:
+The GhostSpeak boo has a **zippered mouth** - this represents privacy and encrypted communication. The CLI embodies this with:
 
 1. **High Contrast** - Black on neon yellow for maximum readability
-2. **Inverted Elements** - Yellow on black "ghost boxes" mimic the logo
+2. **Inverted Elements** - Yellow on black "boo boxes" mimic the logo
 3. **Bold Borders** - Thick black borders create structure
 4. **Playful Icons** - Ghost emojis (👻🎃💀) for loading states
 
@@ -75,10 +75,10 @@ Used for: Decorative separators, banners
 ## Utility Functions
 
 ### `RenderGhostBanner(text string)`
-Creates a banner with ghost emoji + text + zipper
+Creates a banner with boo emoji + text + zipper
 
 ### `RenderSplashScreen(width, height int)`
-Full splash screen with ASCII art ghost logo
+Full splash screen with ASCII art boo logo
 
 ### `ZipperLine(width int)`
 Decorative separator line
@@ -148,6 +148,6 @@ The high contrast between neon yellow and black ensures:
 
 - [ ] Animated zipper opening/closing effect
 - [ ] Ghost ASCII animations (floating effect)
-- [ ] Sound effects (terminal bell) for ghost appearance
+- [ ] Sound effects (terminal bell) for boo appearance
 - [ ] Color gradients within yellow spectrum
-- [ ] Custom Nerd Font icons for ghost symbols
+- [ ] Custom Nerd Font icons for boo symbols

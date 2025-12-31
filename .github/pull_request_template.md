@@ -35,7 +35,7 @@ Closes #
 ```bash
 # Commands used for testing
 go test ./internal/services/...
-./ghost command --flag
+./boo command --flag
 ```
 
 ## Screenshots

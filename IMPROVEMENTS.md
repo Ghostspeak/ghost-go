@@ -321,9 +321,9 @@ app.RegisterPlugin(&CustomRewardsPlugin{
 go get github.com/ghostspeak/plugins/premium-rewards
 
 # Or load from directory
-ghost plugin install ./my-plugin
-ghost plugin list
-ghost plugin enable premium-rewards
+boo plugin install ./my-plugin
+boo plugin list
+boo plugin enable premium-rewards
 ```
 
 ---
@@ -517,7 +517,7 @@ To use real staking, please:
   2. Wait for CLI v1.1.0 (ETA: Q2 2025)
   3. Track progress: https://github.com/ghostspeak/ghost-go/issues/42
 
-For help: ghost help staking
+For help: boo help staking
 ```
 
 ---
@@ -548,19 +548,19 @@ fmt.Printf("✓ Transaction confirmed: %s\n", signature)
 
 **Example:**
 ```bash
-$ ghost staking stake --help
+$ boo staking stake --help
 
 Stake GHOST tokens to earn rewards and unlock tier benefits.
 
 USAGE
-  ghost staking stake <amount> [flags]
+  boo staking stake <amount> [flags]
 
 EXAMPLES
   # Stake 5,000 GHOST tokens
-  ghost staking stake 5000
+  boo staking stake 5000
 
   # Stake with custom network
-  ghost staking stake 5000 --network mainnet
+  boo staking stake 5000 --network mainnet
 
 TIERS
   Bronze: 1,000 - 9,999 GHOST    → +5% reputation
@@ -569,7 +569,7 @@ TIERS
 
 REQUIREMENTS
   • Minimum stake: 1,000 GHOST
-  • Active wallet required (use: ghost wallet create)
+  • Active wallet required (use: boo wallet create)
   • Sufficient SOL for transaction fees (~0.001 SOL)
 
 RESOURCES

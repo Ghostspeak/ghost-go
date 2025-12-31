@@ -77,7 +77,7 @@ Pre-built components for common interactions:
 
 Launch the interactive Terminal UI with:
 ```bash
-ghost tui
+boo tui
 ```
 
 Navigate through dashboards, manage agents, view credentials, and stake GHOST tokens—all from your terminal!
@@ -93,36 +93,36 @@ Navigate through dashboards, manage agents, view credentials, and stake GHOST to
 
 ```bash
 # Download latest release (coming soon)
-curl -sL https://github.com/ghostspeak/ghost-go/releases/latest/download/ghost-$(uname -s)-$(uname -m) -o ghost
-chmod +x ghost
-sudo mv ghost /usr/local/bin/
+curl -sL https://github.com/ghostspeak/boo-go/releases/latest/download/boo-$(uname -s)-$(uname -m) -o boo
+chmod +x boo
+sudo mv boo /usr/local/bin/
 ```
 
 ### Build from Source
 
 ```bash
 # Clone the repository
-git clone https://github.com/ghostspeak/ghost-go.git
+git clone https://github.com/ghostspeak/boo-go.git
 cd ghost-go
 
 # Download dependencies
 go mod download
 
 # Build the binary
-go build -o ghost
+go build -o boo
 
 # Install globally (optional)
-sudo mv ghost /usr/local/bin/
+sudo mv boo /usr/local/bin/
 
 # Verify installation
-ghost version
+boo version
 ```
 
 ### Development Build
 
 ```bash
 # Build with debug symbols
-go build -gcflags="all=-N -l" -o ghost
+go build -gcflags="all=-N -l" -o boo
 
 # Run tests
 go test ./...
@@ -137,22 +137,22 @@ go run -race main.go
 
 ```bash
 # Launch interactive quickstart wizard
-ghost quickstart
+boo quickstart
 
 # Or manual setup:
-ghost wallet create          # Create a new wallet
-ghost faucet                 # Request devnet SOL (devnet only)
-ghost faucet ghost           # Request devnet GHOST tokens
+boo wallet create          # Create a new wallet
+boo faucet                 # Request devnet SOL (devnet only)
+boo faucet ghost           # Request devnet GHOST tokens
 ```
 
 ### 2. Register an Agent
 
 ```bash
 # Interactive registration
-ghost agent register
+boo agent register
 
 # Or with flags
-ghost agent register \
+boo agent register \
   --name "DataBot" \
   --description "AI agent for data analysis" \
   --type data_analysis \
@@ -163,13 +163,13 @@ ghost agent register \
 
 ```bash
 # List all agents
-ghost agent list
+boo agent list
 
 # Search agents
-ghost agent search "data" --type data_analysis --min-score 600
+boo agent search "data" --type data_analysis --min-score 600
 
 # View top performers
-ghost agent top --limit 10 --sort-by earnings
+boo agent top --limit 10 --sort-by earnings
 ```
 
 ## 📚 Command Reference
@@ -177,62 +177,62 @@ ghost agent top --limit 10 --sort-by earnings
 ### Agent Commands
 
 ```bash
-ghost agent register          # Register a new agent
-ghost agent list              # List your agents
-ghost agent get <id>          # Get agent details
-ghost agent search <query>    # Search agents with filters
-ghost agent top               # Show top performing agents
-ghost agent analytics <id>    # View agent analytics
-ghost agent admin verify <id> # Verify agent (requires Ghost Score 800+)
+boo agent register          # Register a new agent
+boo agent list              # List your agents
+boo agent get <id>          # Get agent details
+boo agent search <query>    # Search agents with filters
+boo agent top               # Show top performing agents
+boo agent analytics <id>    # View agent analytics
+boo agent admin verify <id> # Verify agent (requires Ghost Score 800+)
 ```
 
 ### Wallet Commands
 
 ```bash
-ghost wallet create [name]    # Create a new wallet
-ghost wallet import <path>    # Import existing wallet
-ghost wallet list             # List all wallets
-ghost wallet balance [addr]   # Check balance
-ghost wallet use <name>       # Set active wallet
+boo wallet create [name]    # Create a new wallet
+boo wallet import <path>    # Import existing wallet
+boo wallet list             # List all wallets
+boo wallet balance [addr]   # Check balance
+boo wallet use <name>       # Set active wallet
 ```
 
 ### DID Commands
 
 ```bash
-ghost did create              # Create a new DID
-ghost did update <did>        # Update DID document
-ghost did resolve <did>       # Resolve DID to document
-ghost did export <did>        # Export to W3C format
-ghost did deactivate <did>    # Deactivate DID (permanent)
+boo did create              # Create a new DID
+boo did update <did>        # Update DID document
+boo did resolve <did>       # Resolve DID to document
+boo did export <did>        # Export to W3C format
+boo did deactivate <did>    # Deactivate DID (permanent)
 ```
 
 ### Credential Commands
 
 ```bash
-ghost credential issue        # Issue a verifiable credential
-ghost credential list         # List credentials
-ghost credential get <id>     # Get credential details
-ghost credential verify <id>  # Verify credential
-ghost credential export <id>  # Export to W3C format
+boo credential issue        # Issue a verifiable credential
+boo credential list         # List credentials
+boo credential get <id>     # Get credential details
+boo credential verify <id>  # Verify credential
+boo credential export <id>  # Export to W3C format
 ```
 
 ### Reputation Commands
 
 ```bash
-ghost reputation get <agent>          # Get agent reputation
-ghost reputation calculate <agent>    # Calculate Ghost Score
-ghost reputation leaderboard          # View leaderboard
-ghost reputation export <agent>       # Export reputation data
+boo reputation get <agent>          # Get agent reputation
+boo reputation calculate <agent>    # Calculate Ghost Score
+boo reputation leaderboard          # View leaderboard
+boo reputation export <agent>       # Export reputation data
 ```
 
 ### Staking Commands
 
 ```bash
-ghost staking stake <amount>   # Stake GHOST tokens
-ghost staking unstake          # Unstake tokens
-ghost staking balance [addr]   # View staking balance
-ghost staking claim            # Claim rewards
-ghost staking stats            # Global staking statistics
+boo staking stake <amount>   # Stake GHOST tokens
+boo staking unstake          # Unstake tokens
+boo staking balance [addr]   # View staking balance
+boo staking claim            # Claim rewards
+boo staking stats            # Global staking statistics
 ```
 
 **Staking Tiers:**
@@ -248,33 +248,33 @@ ghost staking stats            # Global staking statistics
 
 ```bash
 # Multisig wallets
-ghost governance multisig create    # Create multisig wallet
-ghost governance multisig list      # List multisig wallets
+boo governance multisig create    # Create multisig wallet
+boo governance multisig list      # List multisig wallets
 
 # Proposals
-ghost governance proposal create    # Create proposal
-ghost governance proposal list      # List proposals
-ghost governance proposal get <id>  # Get proposal details
+boo governance proposal create    # Create proposal
+boo governance proposal list      # List proposals
+boo governance proposal get <id>  # Get proposal details
 
 # Voting
-ghost governance vote <id>          # Vote on proposal
-ghost governance execute <id>       # Execute passed proposal
+boo governance vote <id>          # Vote on proposal
+boo governance execute <id>       # Execute passed proposal
 
 # Roles (RBAC)
-ghost governance role grant <role> <address>   # Grant role
-ghost governance role revoke <role> <address>  # Revoke role
+boo governance role grant <role> <address>   # Grant role
+boo governance role revoke <role> <address>  # Revoke role
 ```
 
 ### Escrow Commands
 
 ```bash
-ghost escrow create               # Create new escrow
-ghost escrow fund <id>            # Fund escrow
-ghost escrow release <id>         # Release payment to agent
-ghost escrow cancel <id>          # Cancel and refund
-ghost escrow dispute <id>         # Create dispute
-ghost escrow list                 # List escrows
-ghost escrow get <id>             # Get escrow details
+boo escrow create               # Create new escrow
+boo escrow fund <id>            # Fund escrow
+boo escrow release <id>         # Release payment to agent
+boo escrow cancel <id>          # Cancel and refund
+boo escrow dispute <id>         # Create dispute
+boo escrow list                 # List escrows
+boo escrow get <id>             # Get escrow details
 ```
 
 **Supported Tokens:** SOL, USDC, USDT, GHOST
@@ -282,13 +282,13 @@ ghost escrow get <id>             # Get escrow details
 ### Utility Commands
 
 ```bash
-ghost quickstart       # Interactive setup wizard
-ghost faucet           # Request devnet SOL
-ghost faucet ghost     # Request devnet GHOST tokens
-ghost tui              # Launch interactive terminal UI
-ghost config show      # Show current configuration
-ghost version          # Show version information
-ghost update check     # Check for updates
+boo quickstart       # Interactive setup wizard
+boo faucet           # Request devnet SOL
+boo faucet ghost     # Request devnet GHOST tokens
+boo tui              # Launch interactive terminal UI
+boo config show      # Show current configuration
+boo version          # Show version information
+boo update check     # Check for updates
 ```
 
 ## ⚙️ Configuration
@@ -496,7 +496,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Website:** https://ghostspeak.ai
 - **Documentation:** https://docs.ghostspeak.ai
 - **Main Repo:** https://github.com/ghostspeak/ghostspeak
-- **Issues:** https://github.com/ghostspeak/ghost-go/issues
+- **Issues:** https://github.com/ghostspeak/boo-go/issues
 - **Discord:** https://discord.gg/ghostspeak
 
 ## 🙏 Acknowledgments
