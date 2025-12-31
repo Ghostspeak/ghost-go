@@ -1,10 +1,13 @@
 # GhostSpeak CLI (Go)
 
+**Official Go TUI for GhostSpeak** • Built with [Charm](https://charm.sh) 🌟
+
 [![Go Version](https://img.shields.io/badge/Go-1.21+-00ADD8?style=flat&logo=go)](https://golang.org)
+[![Charm](https://img.shields.io/badge/Charm-Bubbletea-5A56E0?style=flat)](https://github.com/charmbracelet/bubbletea)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
-A powerful command-line interface for the GhostSpeak AI Agent Commerce Protocol on Solana. Built with Go for performance, reliability, and beautiful terminal experiences.
+A powerful Terminal User Interface (TUI) for the GhostSpeak AI Agent Commerce Protocol on Solana. Built with Go and [Charm's Bubbletea](https://github.com/charmbracelet/bubbletea) for a delightful command-line experience.
 
 ```
   ██████╗ ██╗  ██╗ ██████╗ ███████╗████████╗███████╗██████╗ ███████╗ █████╗ ██╗  ██╗
@@ -38,6 +41,40 @@ A powerful command-line interface for the GhostSpeak AI Agent Commerce Protocol 
 - 🌐 **Multi-Network** - Devnet, testnet, and mainnet support
 - 📊 **Rich Output** - Formatted tables, progress indicators, and color themes
 - 🔧 **Configuration** - YAML-based config with environment overrides
+
+## ✨ Built with Charm
+
+This CLI is built with [Charm](https://charm.sh)'s exceptional TUI ecosystem, providing a delightful terminal experience:
+
+### 🫧 [Bubbletea](https://github.com/charmbracelet/bubbletea)
+The Elm-inspired framework powering our interactive TUI. Enjoy smooth, reactive interfaces with:
+- **Interactive dashboards** for Ghost Score analytics
+- **Live agent management** with real-time updates
+- **Form wizards** for agent registration and configuration
+- **Modal dialogs** for confirmations and detailed views
+
+### 💄 [Lipgloss](https://github.com/charmbracelet/lipgloss)
+Beautiful styling and layouts make data visualization a pleasure:
+- **Color-coded tiers** (Bronze, Silver, Gold, Platinum)
+- **Gradient effects** for reputation scores
+- **Responsive tables** that adapt to terminal width
+- **Custom themes** matching GhostSpeak branding
+
+### 🫧 [Bubbles](https://github.com/charmbracelet/bubbles)
+Pre-built components for common interactions:
+- **Spinners** for transaction confirmations
+- **Progress bars** for staking operations
+- **Text inputs** with validation
+- **Lists and tables** for browsing agents
+
+### 🪄 Try the TUI
+
+Launch the interactive Terminal UI with:
+```bash
+ghost tui
+```
+
+Navigate through dashboards, manage agents, view credentials, and stake GHOST tokens—all from your terminal!
 
 ## 📦 Installation
 
@@ -458,9 +495,21 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 🙏 Acknowledgments
 
-- Built with [Charm](https://charm.sh/) - Beautiful terminal tools
-- Powered by [Solana](https://solana.com/) - High-performance blockchain
-- Inspired by the AI agent economy
+Built with love using exceptional open-source tools:
+
+### 🎨 [Charm](https://charm.sh) - Terminal UI Excellence
+- [Bubbletea](https://github.com/charmbracelet/bubbletea) - The TUI framework that makes this CLI delightful
+- [Lipgloss](https://github.com/charmbracelet/lipgloss) - Style definitions for beautiful terminal output
+- [Bubbles](https://github.com/charmbracelet/bubbles) - TUI components for common interactions
+- [Huh](https://github.com/charmbracelet/huh) - Forms and prompts for interactive input
+
+### ⚡ Infrastructure
+- [Solana](https://solana.com) - High-performance blockchain for AI agent commerce
+- [Cobra](https://github.com/spf13/cobra) - CLI framework for command structure
+- [Viper](https://github.com/spf13/viper) - Configuration management
+- [BadgerDB](https://github.com/dgraph-io/badger) - Fast embedded key-value storage
+
+Special thanks to the [Charm](https://github.com/charmbracelet) team for creating the tools that make terminals beautiful!
 
 ## 💬 Support
 
